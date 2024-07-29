@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MacdonaldsDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Dish" Relationship="Self.FK_Dish_Category" FromRole="Category" ToRole="Dish" />
+  </EntityType>
+  <EntityType Name="Dish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CategoryId" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Dish_Category" FromRole="Dish" ToRole="Category" />
+    <NavigationProperty Name="DishAndElement" Relationship="Self.FK_DishAndElement_Dish" FromRole="Dish" ToRole="DishAndElement" />
+  </EntityType>
+  <EntityType Name="DishAndElement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DishId" Type="Int32" />
+    <Property Name="ElementId" Type="Int32" />
+    <NavigationProperty Name="Dish" Relationship="Self.FK_DishAndElement_Dish" FromRole="DishAndElement" ToRole="Dish" />
+    <NavigationProperty Name="Element" Relationship="Self.FK_DishAndElement_Element" FromRole="DishAndElement" ToRole="Element" />
+  </EntityType>
+  <EntityType Name="Element">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="DishAndElement" Relationship="Self.FK_DishAndElement_Element" FromRole="Element" ToRole="DishAndElement" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Dish_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Dish" Type="Self.Dish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dish">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DishAndElement_Dish">
+    <End Role="Dish" Type="Self.Dish" Multiplicity="0..1" />
+    <End Role="DishAndElement" Type="Self.DishAndElement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DishAndElement">
+        <PropertyRef Name="DishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DishAndElement_Element">
+    <End Role="Element" Type="Self.Element" Multiplicity="0..1" />
+    <End Role="DishAndElement" Type="Self.DishAndElement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Element">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DishAndElement">
+        <PropertyRef Name="ElementId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MacdonaldsDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Category" EntityType="Self.Category" />
+    <EntitySet Name="Dish" EntityType="Self.Dish" />
+    <EntitySet Name="DishAndElement" EntityType="Self.DishAndElement" />
+    <EntitySet Name="Element" EntityType="Self.Element" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_Dish_Category" Association="Self.FK_Dish_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Dish" EntitySet="Dish" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DishAndElement_Dish" Association="Self.FK_DishAndElement_Dish">
+      <End Role="Dish" EntitySet="Dish" />
+      <End Role="DishAndElement" EntitySet="DishAndElement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DishAndElement_Element" Association="Self.FK_DishAndElement_Element">
+      <End Role="Element" EntitySet="Element" />
+      <End Role="DishAndElement" EntitySet="DishAndElement" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
