@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Macdonalds.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace Macdonalds.Pages
         public PageStart()
         {
             InitializeComponent();
+            App.dishes = new List<Dish>();
+        }
+
+        private void StartBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageOptions());
+        }
+
+        private void MenuBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMenu());
         }
     }
 }

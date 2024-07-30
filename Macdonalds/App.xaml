@@ -7,7 +7,7 @@
         <Style x:Key="StandartButton" TargetType="Button">
             <Setter Property="FontSize" Value="17"></Setter>
             <Setter Property="Background" Value="Green"></Setter>
-            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
             <Style.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"></Setter>

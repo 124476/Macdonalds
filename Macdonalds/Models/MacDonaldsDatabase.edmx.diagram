@@ -5,14 +5,19 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="a5ba51eec4144c16993cdbcc01981526" Name="Diagram1">
-        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Category" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Dish" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.DishAndElement" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Element" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_Dish_Category" ManuallyRouted="false" />
-        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" ManuallyRouted="false" />
-        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_DishAndElement_Element" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Category" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Dish" Width="1.5" PointX="3" PointY="3.5" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.DishAndElement" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Element" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Feedback" Width="1.5" PointX="5.75" PointY="7.125" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2.125" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.Zakaz" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="MacdonaldsDatabaseModel.ZakazAndDish" Width="1.5" PointX="5.25" PointY="3.75" />
+        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_Dish_Category" />
+        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" />
+        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_ZakazAndDish_Dish" />
+        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_DishAndElement_Element" />
+        <AssociationConnector Association="MacdonaldsDatabaseModel.FK_ZakazAndDish_Zakaz" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -15,6 +15,9 @@ namespace Macdonalds
     public partial class App : Application
     {
         public static MacdonaldsDatabaseEntities DB = new MacdonaldsDatabaseEntities();
+        public static bool IsHere;
+        public static List<Dish> dishes;
+        public static Category Category = App.DB.Category.ToList()[0];
         public App()
         {
             DispatcherUnhandledException += App_DispatcherUnhandledException;

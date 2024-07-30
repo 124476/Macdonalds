@@ -18,6 +18,7 @@ namespace Macdonalds.Models
         public Dish()
         {
             this.DishAndElement = new HashSet<DishAndElement>();
+            this.ZakazAndDish = new HashSet<ZakazAndDish>();
         }
     
         public int Id { get; set; }
@@ -28,5 +29,7 @@ namespace Macdonalds.Models
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DishAndElement> DishAndElement { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ZakazAndDish> ZakazAndDish { get; set; }
     }
 }

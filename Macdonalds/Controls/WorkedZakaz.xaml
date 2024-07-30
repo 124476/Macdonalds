@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Macdonalds.Controls.WorkedZakaz"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Macdonalds.Controls"
+             mc:Ignorable="d" >
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10,0,0,0" Height="180">
+            <StackPanel>
+                <Border Background="Gray" CornerRadius="10,0,0,0">
+                    <TextBlock Text="Готовятся" FontSize="17" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+                </Border>
+                <ListView Background="Transparent" BorderThickness="0" Name="ListNo" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel></WrapPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Number}" FontSize="17" Foreground="Gray" Margin="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FontWeight" Value="Bold"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" CornerRadius="0,10,0,0" Height="180" Grid.Column="1">
+            <StackPanel>
+                <Border Background="Green" CornerRadius="0,10,0,0">
+                    <TextBlock Text="Готовы" FontSize="17" HorizontalAlignment="Center" Foreground="White"></TextBlock>
+                </Border>
+                <ListView Background="Transparent" BorderThickness="0" Name="ListOk" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel></WrapPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Number}" FontSize="23" Foreground="Green" Margin="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

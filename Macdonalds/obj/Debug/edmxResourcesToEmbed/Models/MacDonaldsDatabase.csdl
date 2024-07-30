@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="MacdonaldsDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MacdonaldsDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Category" EntityType="MacdonaldsDatabaseModel.Category" />
+    <EntitySet Name="Dish" EntityType="MacdonaldsDatabaseModel.Dish" />
+    <EntitySet Name="DishAndElement" EntityType="MacdonaldsDatabaseModel.DishAndElement" />
+    <EntitySet Name="Element" EntityType="MacdonaldsDatabaseModel.Element" />
+    <EntitySet Name="Feedback" EntityType="MacdonaldsDatabaseModel.Feedback" />
+    <EntitySet Name="sysdiagrams" EntityType="MacdonaldsDatabaseModel.sysdiagrams" />
+    <EntitySet Name="Zakaz" EntityType="MacdonaldsDatabaseModel.Zakaz" />
+    <EntitySet Name="ZakazAndDish" EntityType="MacdonaldsDatabaseModel.ZakazAndDish" />
+    <AssociationSet Name="FK_Dish_Category" Association="MacdonaldsDatabaseModel.FK_Dish_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Dish" EntitySet="Dish" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DishAndElement_Dish" Association="MacdonaldsDatabaseModel.FK_DishAndElement_Dish">
+      <End Role="Dish" EntitySet="Dish" />
+      <End Role="DishAndElement" EntitySet="DishAndElement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZakazAndDish_Dish" Association="MacdonaldsDatabaseModel.FK_ZakazAndDish_Dish">
+      <End Role="Dish" EntitySet="Dish" />
+      <End Role="ZakazAndDish" EntitySet="ZakazAndDish" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DishAndElement_Element" Association="MacdonaldsDatabaseModel.FK_DishAndElement_Element">
+      <End Role="Element" EntitySet="Element" />
+      <End Role="DishAndElement" EntitySet="DishAndElement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZakazAndDish_Zakaz" Association="MacdonaldsDatabaseModel.FK_ZakazAndDish_Zakaz">
+      <End Role="Zakaz" EntitySet="Zakaz" />
+      <End Role="ZakazAndDish" EntitySet="ZakazAndDish" />
+    </AssociationSet>
+  </EntityContainer>
   <EntityType Name="Category">
     <Key>
       <PropertyRef Name="Id" />
@@ -7,7 +37,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <NavigationProperty Name="Dish" Relationship="Self.FK_Dish_Category" FromRole="Category" ToRole="Dish" />
+    <NavigationProperty Name="Dish" Relationship="MacdonaldsDatabaseModel.FK_Dish_Category" FromRole="Category" ToRole="Dish" />
   </EntityType>
   <EntityType Name="Dish">
     <Key>
@@ -17,8 +47,9 @@
     <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="CategoryId" Type="Int32" />
-    <NavigationProperty Name="Category" Relationship="Self.FK_Dish_Category" FromRole="Dish" ToRole="Category" />
-    <NavigationProperty Name="DishAndElement" Relationship="Self.FK_DishAndElement_Dish" FromRole="Dish" ToRole="DishAndElement" />
+    <NavigationProperty Name="Category" Relationship="MacdonaldsDatabaseModel.FK_Dish_Category" FromRole="Dish" ToRole="Category" />
+    <NavigationProperty Name="DishAndElement" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" FromRole="Dish" ToRole="DishAndElement" />
+    <NavigationProperty Name="ZakazAndDish" Relationship="MacdonaldsDatabaseModel.FK_ZakazAndDish_Dish" FromRole="Dish" ToRole="ZakazAndDish" />
   </EntityType>
   <EntityType Name="DishAndElement">
     <Key>
@@ -27,8 +58,8 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DishId" Type="Int32" />
     <Property Name="ElementId" Type="Int32" />
-    <NavigationProperty Name="Dish" Relationship="Self.FK_DishAndElement_Dish" FromRole="DishAndElement" ToRole="Dish" />
-    <NavigationProperty Name="Element" Relationship="Self.FK_DishAndElement_Element" FromRole="DishAndElement" ToRole="Element" />
+    <NavigationProperty Name="Dish" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" FromRole="DishAndElement" ToRole="Dish" />
+    <NavigationProperty Name="Element" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Element" FromRole="DishAndElement" ToRole="Element" />
   </EntityType>
   <EntityType Name="Element">
     <Key>
@@ -38,21 +69,49 @@
     <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="Count" Type="Int32" />
     <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <NavigationProperty Name="DishAndElement" Relationship="Self.FK_DishAndElement_Element" FromRole="Element" ToRole="DishAndElement" />
+    <NavigationProperty Name="DishAndElement" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Element" FromRole="Element" ToRole="DishAndElement" />
+  </EntityType>
+  <EntityType Name="Feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="Int32" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
     </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
     <Property Name="principal_id" Type="Int32" Nullable="false" />
     <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
+  <EntityType Name="Zakaz">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsPreparing" Type="Boolean" />
+    <Property Name="IsHere" Type="Boolean" />
+    <NavigationProperty Name="ZakazAndDish" Relationship="MacdonaldsDatabaseModel.FK_ZakazAndDish_Zakaz" FromRole="Zakaz" ToRole="ZakazAndDish" />
+  </EntityType>
+  <EntityType Name="ZakazAndDish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZakazId" Type="Int32" />
+    <Property Name="DishId" Type="Int32" />
+    <NavigationProperty Name="Dish" Relationship="MacdonaldsDatabaseModel.FK_ZakazAndDish_Dish" FromRole="ZakazAndDish" ToRole="Dish" />
+    <NavigationProperty Name="Zakaz" Relationship="MacdonaldsDatabaseModel.FK_ZakazAndDish_Zakaz" FromRole="ZakazAndDish" ToRole="Zakaz" />
+  </EntityType>
   <Association Name="FK_Dish_Category">
-    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
-    <End Role="Dish" Type="Self.Dish" Multiplicity="*" />
+    <End Type="MacdonaldsDatabaseModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="MacdonaldsDatabaseModel.Dish" Role="Dish" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Category">
         <PropertyRef Name="Id" />
@@ -63,8 +122,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_DishAndElement_Dish">
-    <End Role="Dish" Type="Self.Dish" Multiplicity="0..1" />
-    <End Role="DishAndElement" Type="Self.DishAndElement" Multiplicity="*" />
+    <End Type="MacdonaldsDatabaseModel.Dish" Role="Dish" Multiplicity="0..1" />
+    <End Type="MacdonaldsDatabaseModel.DishAndElement" Role="DishAndElement" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Dish">
         <PropertyRef Name="Id" />
@@ -74,9 +133,21 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_ZakazAndDish_Dish">
+    <End Type="MacdonaldsDatabaseModel.Dish" Role="Dish" Multiplicity="0..1" />
+    <End Type="MacdonaldsDatabaseModel.ZakazAndDish" Role="ZakazAndDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZakazAndDish">
+        <PropertyRef Name="DishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_DishAndElement_Element">
-    <End Role="Element" Type="Self.Element" Multiplicity="0..1" />
-    <End Role="DishAndElement" Type="Self.DishAndElement" Multiplicity="*" />
+    <End Type="MacdonaldsDatabaseModel.Element" Role="Element" Multiplicity="0..1" />
+    <End Type="MacdonaldsDatabaseModel.DishAndElement" Role="DishAndElement" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Element">
         <PropertyRef Name="Id" />
@@ -86,23 +157,16 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="MacdonaldsDatabaseEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Category" EntityType="Self.Category" />
-    <EntitySet Name="Dish" EntityType="Self.Dish" />
-    <EntitySet Name="DishAndElement" EntityType="Self.DishAndElement" />
-    <EntitySet Name="Element" EntityType="Self.Element" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
-    <AssociationSet Name="FK_Dish_Category" Association="Self.FK_Dish_Category">
-      <End Role="Category" EntitySet="Category" />
-      <End Role="Dish" EntitySet="Dish" />
-    </AssociationSet>
-    <AssociationSet Name="FK_DishAndElement_Dish" Association="Self.FK_DishAndElement_Dish">
-      <End Role="Dish" EntitySet="Dish" />
-      <End Role="DishAndElement" EntitySet="DishAndElement" />
-    </AssociationSet>
-    <AssociationSet Name="FK_DishAndElement_Element" Association="Self.FK_DishAndElement_Element">
-      <End Role="Element" EntitySet="Element" />
-      <End Role="DishAndElement" EntitySet="DishAndElement" />
-    </AssociationSet>
-  </EntityContainer>
+  <Association Name="FK_ZakazAndDish_Zakaz">
+    <End Type="MacdonaldsDatabaseModel.Zakaz" Role="Zakaz" Multiplicity="0..1" />
+    <End Type="MacdonaldsDatabaseModel.ZakazAndDish" Role="ZakazAndDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zakaz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZakazAndDish">
+        <PropertyRef Name="ZakazId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

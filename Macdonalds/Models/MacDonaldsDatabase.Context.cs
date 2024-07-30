@@ -29,6 +29,9 @@ namespace Macdonalds.Models
         public virtual DbSet<Dish> Dish { get; set; }
         public virtual DbSet<DishAndElement> DishAndElement { get; set; }
         public virtual DbSet<Element> Element { get; set; }
+        public virtual DbSet<Feedback> Feedback { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Zakaz> Zakaz { get; set; }
+        public virtual DbSet<ZakazAndDish> ZakazAndDish { get; set; }
     }
 }

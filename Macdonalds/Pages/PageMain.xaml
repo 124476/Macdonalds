@@ -4,11 +4,33 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Macdonalds.Pages"
+      xmlns:uc="clr-namespace:Macdonalds.Controls"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageMain">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <uc:CategoryesDisplay x:Name="ListCategoryes"></uc:CategoryesDisplay>
+            <uc:DishesDisplay x:Name="ListDishes" Grid.Column="1"></uc:DishesDisplay>
+        </Grid>
+        <Grid Grid.Row="3" Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="CancelBtn" Content="Отменить заказ" Style="{StaticResource StandartButton}" Click="CancelBtn_Click" Background="Red" Margin="10"></Button>
+            <Button x:Name="SaveBtn" Content="Готово" Style="{StaticResource StandartButton}" Grid.Column="1" Click="SaveBtn_Click" IsEnabled="False" Margin="10"></Button>
+        </Grid>
     </Grid>
 </Page>

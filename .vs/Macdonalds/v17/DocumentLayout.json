@@ -3,36 +3,104 @@
   "WorkspaceRootPath": "D:\\repos\\Macdonalds\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\controls\\categoryesdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\categoryesdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pagemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagemenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\pages\\pagestart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagestart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\controls\\dishesdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\dishesdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\models\\partials\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\models\\partials\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\controls\\categoryesdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\categoryesdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pagemenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagemenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\controls\\dishesdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\dishesdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\controls\\workedzakaz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\workedzakaz.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\models\\macdonaldsdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\controls\\workedzakaz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\workedzakaz.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\controls\\feedbacks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\feedbacks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|d:\\repos\\macdonalds\\macdonalds\\models\\partials\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\models\\partials\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pagestart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagestart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pageoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pageoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pagestart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pagestart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\controls\\feedbacks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\controls\\feedbacks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\models\\partials\\zakaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\models\\partials\\zakaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\models\\partials\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\models\\partials\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\models\\macdonaldsdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\models\\macdonaldsdatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|D:\\repos\\Macdonalds\\macdonalds\\pages\\pageoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EDEA80-52FB-40E1-8A3D-3951BD5D0691}|Macdonalds\\Macdonalds.csproj|solutionrelative:macdonalds\\pages\\pageoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,73 +110,49 @@
       "DocumentGroups": [
         {
           "DockedHeight": 405,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PageStart.xaml",
-              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml",
-              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageStart.xaml",
-              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml",
-              "RelativeToolTip": "Macdonalds\\Pages\\PageStart.xaml",
+              "DocumentIndex": 0,
+              "Title": "CategoryesDisplay.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\CategoryesDisplay.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\CategoryesDisplay.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\CategoryesDisplay.xaml",
+              "RelativeToolTip": "Macdonalds\\Controls\\CategoryesDisplay.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-29T13:07:38.563Z",
+              "WhenOpened": "2024-07-30T12:00:50.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml",
-              "RelativeDocumentMoniker": "Macdonalds\\App.xaml",
-              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml",
-              "RelativeToolTip": "Macdonalds\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-29T13:02:05.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PageMain.xaml.cs",
-              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMain.xaml.cs",
-              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageMain.xaml.cs",
-              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMain.xaml.cs",
-              "RelativeToolTip": "Macdonalds\\Pages\\PageMain.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "WorkedZakaz.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\WorkedZakaz.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\WorkedZakaz.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\WorkedZakaz.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Controls\\WorkedZakaz.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:02:04.319Z",
+              "WhenOpened": "2024-07-30T10:55:47.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Macdonalds\\App.xaml.cs",
-              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml.cs",
-              "RelativeToolTip": "Macdonalds\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
+              "Title": "CategoryesDisplay.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\CategoryesDisplay.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\CategoryesDisplay.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\CategoryesDisplay.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Controls\\CategoryesDisplay.xaml.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwCwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T13:01:48.825Z",
+              "WhenOpened": "2024-07-30T12:01:05.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MacDonaldsDatabase.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\MacDonaldsDatabase.edmx",
-              "RelativeDocumentMoniker": "Macdonalds\\Models\\MacDonaldsDatabase.edmx",
-              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\MacDonaldsDatabase.edmx [Diagram1]",
-              "RelativeToolTip": "Macdonalds\\Models\\MacDonaldsDatabase.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-07-29T13:01:13.532Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PageMain.xaml",
               "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMain.xaml",
               "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageMain.xaml",
@@ -120,7 +164,95 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageMenu.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMenu.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageMenu.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMenu.xaml",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-30T11:21:22.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PageMain.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMain.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageMain.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMain.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageMain.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:02:04.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageMenu.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMenu.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageMenu.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageMenu.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageMenu.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T11:21:24.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "DishesDisplay.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\DishesDisplay.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\DishesDisplay.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\DishesDisplay.xaml",
+              "RelativeToolTip": "Macdonalds\\Controls\\DishesDisplay.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-30T12:21:35.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DishesDisplay.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\DishesDisplay.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\DishesDisplay.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\DishesDisplay.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Controls\\DishesDisplay.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:24:51.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PageOptions.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageOptions.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageOptions.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageOptions.xaml",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageOptions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-30T07:31:13.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Dish.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Models\\Partials\\Dish.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Dish.cs",
+              "RelativeToolTip": "Macdonalds\\Models\\Partials\\Dish.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:24:11.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Macdonalds\\MainWindow.xaml",
@@ -132,16 +264,161 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\App.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:01:48.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PageStart.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageStart.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageStart.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T13:07:38.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FeedBacks.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\FeedBacks.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\FeedBacks.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\FeedBacks.xaml",
+              "RelativeToolTip": "Macdonalds\\Controls\\FeedBacks.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-30T11:19:57.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PageStart.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageStart.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageStart.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageStart.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:27:34.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Category.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Models\\Partials\\Category.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Category.cs",
+              "RelativeToolTip": "Macdonalds\\Models\\Partials\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T12:15:47.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MacDonaldsDatabase.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\MacDonaldsDatabase.edmx",
+              "RelativeDocumentMoniker": "Macdonalds\\Models\\MacDonaldsDatabase.edmx",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\MacDonaldsDatabase.edmx [Diagram1]",
+              "RelativeToolTip": "Macdonalds\\Models\\MacDonaldsDatabase.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-07-29T13:01:13.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Macdonalds\\MainWindow.xaml.cs",
               "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\MainWindow.xaml.cs",
               "RelativeToolTip": "Macdonalds\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAqwBoAAAAqAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T12:52:05.307Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WorkedZakaz.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\WorkedZakaz.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\WorkedZakaz.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\WorkedZakaz.xaml",
+              "RelativeToolTip": "Macdonalds\\Controls\\WorkedZakaz.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-30T10:51:43.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml",
+              "RelativeDocumentMoniker": "Macdonalds\\App.xaml",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\App.xaml",
+              "RelativeToolTip": "Macdonalds\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T13:02:05.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Zakaz.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Zakaz.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Models\\Partials\\Zakaz.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Zakaz.cs",
+              "RelativeToolTip": "Macdonalds\\Models\\Partials\\Zakaz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T11:04:27.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FeedBacks.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\FeedBacks.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Controls\\FeedBacks.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Controls\\FeedBacks.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Controls\\FeedBacks.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T11:20:35.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PageOptions.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageOptions.xaml.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Pages\\PageOptions.xaml.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Pages\\PageOptions.xaml.cs",
+              "RelativeToolTip": "Macdonalds\\Pages\\PageOptions.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:35:25.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Feedback.cs",
+              "RelativeDocumentMoniker": "Macdonalds\\Models\\Partials\\Feedback.cs",
+              "ToolTip": "D:\\repos\\Macdonalds\\Macdonalds\\Models\\Partials\\Feedback.cs",
+              "RelativeToolTip": "Macdonalds\\Models\\Partials\\Feedback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T10:36:36.937Z"
             }
           ]
         }

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Macdonalds"
         mc:Ignorable="d"
-        Title="Макдоналдс" Height="450" Width="800" MinHeight="450" MinWidth="800">
+        Title="Макдоналдс" Height="600" Width="600" MinHeight="600" MinWidth="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+        <TextBlock Text="Реклама" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50" Name="Reclama"></TextBlock>
         <Button x:Name="BackBtn" Content="Назад" Click="BackBtn_Click" Style="{StaticResource StandartButton}" HorizontalAlignment="Right" Margin="10" Width="100"></Button>
         <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MyFrame_ContentRendered"></Frame>
     </Grid>

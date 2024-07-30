@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\repos\Macdonalds\Macdonalds\App.xaml
-21522129965
+91800589962
 2501089073
-14-1363014702
+28948666039
 18-1155584535
-MainWindow.xaml;Pages\PageMain.xaml;
+Controls\CategoryesDisplay.xaml;Controls\DishesDisplay.xaml;Controls\FeedBacks.xaml;Controls\WorkedZakaz.xaml;MainWindow.xaml;Pages\PageMain.xaml;Pages\PageMenu.xaml;Pages\PageOptions.xaml;Pages\PageStart.xaml;
 
 False
 

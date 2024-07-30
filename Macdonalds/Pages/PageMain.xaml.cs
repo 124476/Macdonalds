@@ -23,6 +23,27 @@ namespace Macdonalds.Pages
         public PageMain()
         {
             InitializeComponent();
+            Refresh();
+            ListCategoryes.dishesDisplay = ListDishes;
+        }
+
+        private void Refresh()
+        {
+            if (App.dishes.Count > 0)
+                SaveBtn.IsEnabled = true;
+        }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Точно отменить?", "Сообщение", MessageBoxButton.YesNo) != MessageBoxResult.Yes)
+                return;
+            for (int i = 0; i < 2; i ++)
+                NavigationService.GoBack();
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -34,6 +34,14 @@
     <Property Name="Count" Type="int" />
     <Property Name="Photo" Type="image" />
   </EntityType>
+  <EntityType Name="Feedback">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="Number" Type="int" />
+  </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />
@@ -43,6 +51,23 @@
     <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Zakaz">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsPreparing" Type="bit" />
+    <Property Name="IsHere" Type="bit" />
+  </EntityType>
+  <EntityType Name="ZakazAndDish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZakazId" Type="int" />
+    <Property Name="DishId" Type="int" />
   </EntityType>
   <Association Name="FK_Dish_Category">
     <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
@@ -80,12 +105,39 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_ZakazAndDish_Dish">
+    <End Role="Dish" Type="Self.Dish" Multiplicity="0..1" />
+    <End Role="ZakazAndDish" Type="Self.ZakazAndDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZakazAndDish">
+        <PropertyRef Name="DishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZakazAndDish_Zakaz">
+    <End Role="Zakaz" Type="Self.Zakaz" Multiplicity="0..1" />
+    <End Role="ZakazAndDish" Type="Self.ZakazAndDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zakaz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZakazAndDish">
+        <PropertyRef Name="ZakazId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Хранилище MacdonaldsDatabaseModelContainer">
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dish" EntityType="Self.Dish" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DishAndElement" EntityType="Self.DishAndElement" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Element" EntityType="Self.Element" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Feedback" EntityType="Self.Feedback" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zakaz" EntityType="Self.Zakaz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZakazAndDish" EntityType="Self.ZakazAndDish" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Dish_Category" Association="Self.FK_Dish_Category">
       <End Role="Category" EntitySet="Category" />
       <End Role="Dish" EntitySet="Dish" />
@@ -97,6 +149,14 @@
     <AssociationSet Name="FK_DishAndElement_Element" Association="Self.FK_DishAndElement_Element">
       <End Role="Element" EntitySet="Element" />
       <End Role="DishAndElement" EntitySet="DishAndElement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZakazAndDish_Dish" Association="Self.FK_ZakazAndDish_Dish">
+      <End Role="Dish" EntitySet="Dish" />
+      <End Role="ZakazAndDish" EntitySet="ZakazAndDish" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZakazAndDish_Zakaz" Association="Self.FK_ZakazAndDish_Zakaz">
+      <End Role="Zakaz" EntitySet="Zakaz" />
+      <End Role="ZakazAndDish" EntitySet="ZakazAndDish" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

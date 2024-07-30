@@ -64,6 +64,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\CategoryesDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DishesDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FeedBacks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\WorkedZakaz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,11 +88,31 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\CategoryesDisplay.xaml.cs">
+      <DependentUpon>CategoryesDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DishesDisplay.xaml.cs">
+      <DependentUpon>DishesDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FeedBacks.xaml.cs">
+      <DependentUpon>FeedBacks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WorkedZakaz.xaml.cs">
+      <DependentUpon>WorkedZakaz.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\PageMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageOptions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,6 +134,9 @@
     <Compile Include="Models\Element.cs">
       <DependentUpon>MacDonaldsDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Feedback.cs">
+      <DependentUpon>MacDonaldsDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MacDonaldsDatabase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,11 +152,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MacDonaldsDatabase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Partials\Category.cs" />
+    <Compile Include="Models\Partials\Dish.cs" />
+    <Compile Include="Models\Partials\Feedback.cs" />
+    <Compile Include="Models\Partials\Zakaz.cs" />
     <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>MacDonaldsDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Zakaz.cs">
+      <DependentUpon>MacDonaldsDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ZakazAndDish.cs">
       <DependentUpon>MacDonaldsDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageMain.xaml.cs">
       <DependentUpon>PageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageMenu.xaml.cs">
+      <DependentUpon>PageMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageOptions.xaml.cs">
+      <DependentUpon>PageOptions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageStart.xaml.cs">
       <DependentUpon>PageStart.xaml</DependentUpon>

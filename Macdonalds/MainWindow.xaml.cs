@@ -1,6 +1,8 @@
 ﻿using Macdonalds.Pages;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,14 +27,32 @@ namespace Macdonalds
         {
             InitializeComponent();
             MyFrame.Navigate(new PageStart());
+
+            //var categoryes = App.DB.Dish.ToList();
+            //var dialog = new OpenFileDialog() { Multiselect = true };
+            //if (dialog.ShowDialog().GetValueOrDefault())
+            //{
+            //    var files = dialog.FileNames;
+            //    for (int i = 0; i < files.Count(); i++)
+            //    {
+            //        categoryes[i].Photo = File.ReadAllBytes(files[i]);
+            //    }
+            //}
+            //App.DB.SaveChanges();
         }
 
         private void MyFrame_ContentRendered(object sender, EventArgs e)
         {
             if (MyFrame.CanGoBack)
+            {
                 BackBtn.Visibility = Visibility.Visible;
+                Reclama.Visibility = Visibility.Collapsed;
+            }
             else
+            {
                 BackBtn.Visibility = Visibility.Collapsed;
+                Reclama.Visibility = Visibility.Visible;
+            }
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
