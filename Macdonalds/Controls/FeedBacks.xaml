@@ -12,16 +12,29 @@
                 <Border  Background="Green" CornerRadius="10,10,0,0">
                     <TextBlock Text="Отзывы" FontSize="17" HorizontalAlignment="Center" Foreground="White"></TextBlock>
                 </Border>
-                <ListView Height="150" Background="Transparent" Name="ListFeedBacks" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderThickness="0">
-                    <ListView.ItemTemplate>
+                <ListBox Height="150" Background="Transparent" Name="ListFeedBacks" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderThickness="0">
+                    <ListBox.Resources>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border Background="Transparent">
+                                            <ContentPresenter/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.Resources>
+                    <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Margin="5">
                                 <TextBlock Text="{Binding Name}" FontSize="17"></TextBlock>
                                 <TextBlock Text="{Binding Zvezd}" FontSize="17"></TextBlock>
                             </StackPanel>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </StackPanel>
         </Border>
     </Grid>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Macdonalds.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +24,23 @@ namespace Macdonalds.Controls
         public DishesDisplay()
         {
             InitializeComponent();
+            App.IsDish = false;
             Refresh();
         }
 
         public void Refresh()
         {
             ListDishes.ItemsSource = App.DB.Dish.Where(x => x.CategoryId == App.Category.Id).ToList();
+        }
+
+        private void ListDishes_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            var dish = ListDishes.SelectedItem as Dish;
+            if (dish == null)
+                return;
+
+            App.Dish = dish;
+            App.IsDish = true;
         }
     }
 }

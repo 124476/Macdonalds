@@ -1,12 +1,15 @@
 ﻿
 FD:\repos\Macdonalds\Macdonalds\App.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Controls\CategoryesDisplay.xaml;;
+FD:\repos\Macdonalds\Macdonalds\Controls\DishesDisplay.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Controls\FeedBacks.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Controls\WorkedZakaz.xaml;;
 FD:\repos\Macdonalds\Macdonalds\MainWindow.xaml;;
+FD:\repos\Macdonalds\Macdonalds\Pages\PageIngredients.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Pages\PageMain.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Pages\PageMenu.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Pages\PageOptions.xaml;;
 FD:\repos\Macdonalds\Macdonalds\Pages\PageStart.xaml;;
-FD:\repos\Macdonalds\Macdonalds\Controls\DishesDisplay.xaml;;
+FD:\repos\Macdonalds\Macdonalds\Pages\PageEnd.xaml;;
+FD:\repos\Macdonalds\Macdonalds\Pages\PageOplata.xaml;;
 

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListBox x:Name="ListDishes" Margin="10" BorderThickness="0">
+        <ListBox x:Name="ListDishes" Margin="10" BorderThickness="0" MouseUp="ListDishes_MouseUp">
             <ListBox.Resources>
                 <Style TargetType="ListBoxItem">
                     <Setter Property="Template">
@@ -30,14 +30,17 @@
                 <DataTemplate>
                     <Border CornerRadius="10" Margin="10,5,10,5" Width="150" Height="120" HorizontalAlignment="Center">
                         <Grid>
-                            <Image Source="{Binding Photo}" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,10" ></Image>
-                            <TextBlock Text="{Binding Name}" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="Wrap">
-                                <TextBlock.Resources>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="FontWeight" Value="Bold"/>
-                                    </Style>
-                                </TextBlock.Resources>
-                            </TextBlock>
+                            <Image Source="{Binding Photo}" Width="100" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,10" ></Image>
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                                <TextBlock Text="{Binding Name}" FontSize="13" TextWrapping="Wrap" HorizontalAlignment="Center">
+                                    <TextBlock.Resources>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </Style>
+                                    </TextBlock.Resources>
+                                </TextBlock>
+                                <TextBlock Text="{Binding Count, StringFormat=' {0} рублей'}" HorizontalAlignment="Center" FontSize="13"></TextBlock>
+                            </StackPanel>
                         </Grid>
                     </Border>
                 </DataTemplate>

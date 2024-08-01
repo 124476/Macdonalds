@@ -28,7 +28,7 @@ namespace Macdonalds
             InitializeComponent();
             MyFrame.Navigate(new PageStart());
 
-            //var categoryes = App.DB.Dish.ToList();
+            //var categoryes = App.DB.Element.ToList();
             //var dialog = new OpenFileDialog() { Multiselect = true };
             //if (dialog.ShowDialog().GetValueOrDefault())
             //{
@@ -43,7 +43,7 @@ namespace Macdonalds
 
         private void MyFrame_ContentRendered(object sender, EventArgs e)
         {
-            if (MyFrame.CanGoBack)
+            if (MyFrame.CanGoBack && App.IsBack)
             {
                 BackBtn.Visibility = Visibility.Visible;
                 Reclama.Visibility = Visibility.Collapsed;

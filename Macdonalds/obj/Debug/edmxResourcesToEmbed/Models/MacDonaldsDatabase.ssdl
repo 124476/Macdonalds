@@ -24,6 +24,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DishId" Type="int" />
     <Property Name="ElementId" Type="int" />
+    <Property Name="Count" Type="int" />
   </EntityType>
   <EntityType Name="Element">
     <Key>

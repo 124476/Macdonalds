@@ -17,6 +17,7 @@ namespace Macdonalds.Models
         public int Id { get; set; }
         public Nullable<int> DishId { get; set; }
         public Nullable<int> ElementId { get; set; }
+        public Nullable<int> Count { get; set; }
     
         public virtual Dish Dish { get; set; }
         public virtual Element Element { get; set; }

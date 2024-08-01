@@ -29,6 +29,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DishId" Type="int" />
           <Property Name="ElementId" Type="int" />
+          <Property Name="Count" Type="int" />
         </EntityType>
         <EntityType Name="Element">
           <Key>
@@ -226,6 +227,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DishId" Type="Int32" />
           <Property Name="ElementId" Type="Int32" />
+          <Property Name="Count" Type="Int32" />
           <NavigationProperty Name="Dish" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" FromRole="DishAndElement" ToRole="Dish" />
           <NavigationProperty Name="Element" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Element" FromRole="DishAndElement" ToRole="Element" />
         </EntityType>
@@ -365,6 +367,7 @@
           <EntitySetMapping Name="DishAndElement">
             <EntityTypeMapping TypeName="MacdonaldsDatabaseModel.DishAndElement">
               <MappingFragment StoreEntitySet="DishAndElement">
+                <ScalarProperty Name="Count" ColumnName="Count" />
                 <ScalarProperty Name="ElementId" ColumnName="ElementId" />
                 <ScalarProperty Name="DishId" ColumnName="DishId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

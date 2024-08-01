@@ -26,6 +26,7 @@ namespace Macdonalds.Controls
         {
             InitializeComponent();
 
+            App.Category = App.DB.Category.ToList()[0];
             foreach (var item in App.DB.Category.ToList())
                 item.Color = "Black";
             App.DB.Category.ToList()[0].Color = "White";

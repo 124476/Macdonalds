@@ -11,7 +11,9 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Text="Реклама" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50" Name="Reclama"></TextBlock>
+        <Border Background="Red" Name="Reclama">
+            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Imports/Reklama.png" Margin="10" Height="100"></Image>
+        </Border>
         <Button x:Name="BackBtn" Content="Назад" Click="BackBtn_Click" Style="{StaticResource StandartButton}" HorizontalAlignment="Right" Margin="10" Width="100"></Button>
         <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MyFrame_ContentRendered"></Frame>
     </Grid>

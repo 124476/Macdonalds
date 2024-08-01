@@ -23,6 +23,7 @@
     <EntitySetMapping Name="DishAndElement">
       <EntityTypeMapping TypeName="MacdonaldsDatabaseModel.DishAndElement">
         <MappingFragment StoreEntitySet="DishAndElement">
+          <ScalarProperty Name="Count" ColumnName="Count" />
           <ScalarProperty Name="ElementId" ColumnName="ElementId" />
           <ScalarProperty Name="DishId" ColumnName="DishId" />
           <ScalarProperty Name="Id" ColumnName="Id" />

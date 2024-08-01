@@ -15,15 +15,28 @@
                 <Border Background="Gray" CornerRadius="10,0,0,0">
                     <TextBlock Text="Готовятся" FontSize="17" HorizontalAlignment="Center" Foreground="White"></TextBlock>
                 </Border>
-                <ListView Background="Transparent" BorderThickness="0" Name="ListNo" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-                    <ListView.ItemsPanel>
+                <ListBox Background="Transparent" BorderThickness="0" Name="ListNo" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                    <ListBox.Resources>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border Background="Transparent">
+                                            <ContentPresenter/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.Resources>
+                    <ListBox.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel></WrapPanel>
                         </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Number}" FontSize="17" Foreground="Gray" Margin="1">
+                            <TextBlock Text="{Binding Number}" FontSize="17" Foreground="Gray" Margin="3">
                                 <TextBlock.Style>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="FontWeight" Value="Bold"/>
@@ -31,8 +44,8 @@
                                 </TextBlock.Style>
                             </TextBlock>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </StackPanel>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" CornerRadius="0,10,0,0" Height="180" Grid.Column="1">
@@ -40,15 +53,28 @@
                 <Border Background="Green" CornerRadius="0,10,0,0">
                     <TextBlock Text="Готовы" FontSize="17" HorizontalAlignment="Center" Foreground="White"></TextBlock>
                 </Border>
-                <ListView Background="Transparent" BorderThickness="0" Name="ListOk" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
-                    <ListView.ItemsPanel>
+                <ListBox Background="Transparent" BorderThickness="0" Name="ListOk" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                    <ListBox.Resources>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border Background="Transparent">
+                                            <ContentPresenter/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.Resources>
+                    <ListBox.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapPanel></WrapPanel>
                         </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Number}" FontSize="23" Foreground="Green" Margin="1">
+                            <TextBlock Text="{Binding Number}" FontSize="23" Foreground="Green" Margin="6">
                                 <TextBlock.Style>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="FontWeight" Value="Bold" />
@@ -56,8 +82,8 @@
                                 </TextBlock.Style>
                             </TextBlock>
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                    </ListBox.ItemTemplate>
+                </ListBox>
             </StackPanel>
         </Border>
     </Grid>

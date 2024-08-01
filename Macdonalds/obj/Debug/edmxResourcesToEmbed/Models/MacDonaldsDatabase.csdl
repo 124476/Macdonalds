@@ -58,6 +58,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DishId" Type="Int32" />
     <Property Name="ElementId" Type="Int32" />
+    <Property Name="Count" Type="Int32" />
     <NavigationProperty Name="Dish" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Dish" FromRole="DishAndElement" ToRole="Dish" />
     <NavigationProperty Name="Element" Relationship="MacdonaldsDatabaseModel.FK_DishAndElement_Element" FromRole="DishAndElement" ToRole="Element" />
   </EntityType>

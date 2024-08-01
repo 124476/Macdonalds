@@ -16,8 +16,11 @@ namespace Macdonalds
     {
         public static MacdonaldsDatabaseEntities DB = new MacdonaldsDatabaseEntities();
         public static bool IsHere;
-        public static List<Dish> dishes;
+        public static List<Dish> dishes = new List<Dish>();
         public static Category Category = App.DB.Category.ToList()[0];
+        public static Dish Dish;
+        public static bool IsDish = false;
+        public static bool IsBack = true;
         public App()
         {
             DispatcherUnhandledException += App_DispatcherUnhandledException;

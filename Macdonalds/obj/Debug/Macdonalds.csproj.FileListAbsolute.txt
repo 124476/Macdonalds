@@ -38,3 +38,9 @@ D:\repos\Macdonalds\Macdonalds\obj\Debug\Controls\CategoryesDisplay.g.cs
 D:\repos\Macdonalds\Macdonalds\obj\Debug\Controls\CategoryesDisplay.baml
 D:\repos\Macdonalds\Macdonalds\obj\Debug\Controls\DishesDisplay.g.cs
 D:\repos\Macdonalds\Macdonalds\obj\Debug\Controls\DishesDisplay.baml
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageIngredients.g.cs
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageIngredients.baml
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageEnd.g.cs
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageOplata.g.cs
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageEnd.baml
+D:\repos\Macdonalds\Macdonalds\obj\Debug\Pages\PageOplata.baml
